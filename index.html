@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Центральные пылесосы</title>
+    <!--<link rel="stylesheet" href="assets/libs/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="assets/libs/all.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+<div class="preloader">
+    <div class="loader">
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__ball"></div>
+    </div>
+</div>
+<div class="top">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand logo" href="#">
+            <div class="d-flex flex-wrap align-items-center justify-content-center">
+                <img src="assets/img/logo-min.png" alt="logo">
+                <div class="text-uppercase">центральные пылесосы</div>
+            </div>
+        </a>
+        <button type="button" class="navbar-toggl">
+            <img src="assets/img/menu.png" alt="">
+        </button>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <a class="nav-link " href="#cleaner-link">Устройство</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#calculator">Расчёт стоимости</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#steps">Этапы работы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#honest">О нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sales">Акционные предложения</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#our-clients">Отзывы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacts">Контакты</a>
+            </li>
+            <li class="nav-item">
+                
+            </li>
+        </ul>
+        <div class="shade"></div>
+    </nav>
+</div>
+<header>
+    <div class="container-fluid">
+        <div class="body-header">
+            <div class="row">
+                <div class="col-lg-3 col-md-4    d-flex justify-content-center align-items-center">
+                    <div class="why">
+                        <h4 class="text-uppercase">зачем?</h4>
+                        <ul>
+                            <li>Таскать тяжелый пылесос</li>
+                            <li>Тратить полдня на уборку</li>
+                            <li>Терпеть шум пылесоса</li>
+                        </ul>
+                        <span>Если можно встроить</span>
+                        <strong>ЦЕНТРАЛЬНЫЙ ПЫЛЕСОС</strong>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-lg-1 d-flex flex-column justify-content-center align-items-start">
+                    <h1>ВСТРОЕНЫЙ ПЫЛЕСОС ДЛЯ ДОМА И КВАРТИРЫ</h1>
+                    <div class="d-flex align-items-center flex-wrap justify-content-center">
+                        <a href="#calculator" class="scroll-down-btn">УЗНАТЬ ПРЕДВАРИТЕЛЬНУЮ СТОИМОСТЬ</a>
+                        <div class="company-phone d-flex flex-column justify-content-center align-items-center">
+                            <button type="button" class="bingc-action-open-passive-form">
+                                Перезвонить мне
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#calculator" class="scroll-down">
+        <img src="assets/img/down-arrow.png" alt="">
+    </a>
+</header>
+<section class="calculator" id="calculator">
+    <div class="container">
+        <div class="row justify-content-center">
+            <form action="mail.php" method="post" id="calc-form" enctype="multipart/form-data">
+                <div class="form-head-container">
+                    <h2 class="text-center">Калькулятор</h2>
+                </div>
+                <table class="table table-sm">
+                    <tbody>
+                    <tr>
+                        <td><span>Тип объекта</span></td>
+                        <td>
+                            <div class="d-flex justify-content-start flex-wrap align-items-start">
+                                <label><input type="radio" name="place" value="house"><span class="check-mark"><i class="fas fa-check"></i></span>Дом</label>
+                                <label><input type="radio" name="place" value="flat"><span class="check-mark"><i class="fas fa-check"></i></span>Квартира</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Площадь(м<sup>2</sup>)</span></td>
+                        <td class="range-part">
+                            <div class="metres-range">
+                                <input id="square" name="square" type="range" min="30" max="1000">
+                                <div id="slider">
+                                    <div id="custom-handle" class="ui-slider-handle"></div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small>30</small>
+                                    <small>1000</small>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>
+                            Дополнительные <br>
+                            аксессуары
+                        </span></td>
+                        <td>
+                            <div class="d-flex flex-column">
+                                <label><input type="radio" value="not" name="accesorieses"><span class="check-mark"><i class="fas fa-check"></i></span>Не нужны</label>
+                                <label><input type="radio" value="VacPan" name="accesorieses"><span class="check-mark"><i class="fas fa-check"></i></span>Пневмосовок VacPan</label>
+                                <label><input type="radio" value="WallyFlex" name="accesorieses"><span class="check-mark"><i class="fas fa-check"></i></span>Растягивающийся шланг WallyFlex</label>
+                                <label><input type="radio" value="Vroom" name="accesorieses" ><span class="check-mark"><i class="fas fa-check"></i></span>Шланг в кассете Vroom</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>План помещения <br>
+                            "любой формат"</td>
+                        <td>
+                            <div class="d-flex justify-content-around align-items-center get-file">
+                                <input type="file" id="calc-file" name="calcs-file[]" multiple="multiple">
+                                <button type="button" class="text-uppercase" id="call-calc-file">добавить</button>
+                                <span><small class="file-name mr-1">file not choosed</small><button type="button" id="reset-file"><i class="fas fa-times"></i></button></span>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="form-group">
+                    <input type="text" placeholder="Имя" name="user_name">
+                    <input type="tel" placeholder="Телефон" name="user_phone" id="phone-calc">
+                    <input id="calc-form-submit" type="submit" value="узнать стоимость">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-12">
+                <h1 class="title">Во всем мире уже в более 65% домах встроен центральный пылесос, он:</h1>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- ШУМОИЗОЛЯЦИЯ-->
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="nav col-xs-9">
+                                    <ul class="navig">
+                                        <li class="aktiv" data-target="#carouselExampleIndicators" data-slide-to="0" ><a href="#">Шумоизоляция</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"><a href="#">Энергозатратность</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"><a href="#">Декоративность</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"><a href="#">Здоровье</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"><a href="#">Инвестиция</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-12 kartinka">
+                                    <img src="assets/img/tihiy.JPG" alt="" class="w-100">
+                                    <a class="carousel-control-prev"  data-target="#carouselExampleIndicators" data-slide-to="4">
+                                        <img src="assets/img/left.png" class="prew">
+                                    </a>
+                                    <a class="carousel-control-next"  data-target="#carouselExampleIndicators" data-slide-to="1">
+                                        <img src="assets/img/right.png" class="next" >
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-12 b2">
+                                    <h3>Тихий и незаметный (навсегда забудете про шумящие пылесосы)</h3>
+                                    <p>Смотрите фильмы, слушайте музыку, говорите по телефону во время уборки. Центральный пылесос устанавливается за пределами жилой зоны, и не будет утомлять ваш слух монотонным гулом, как переносной пылесос. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ЭНЕРГОЗАТРАТНОСТЬ -->
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="nav col-xs-9">
+                                    <ul class="navig">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" ><a href="#">Шумоизоляция</a></li>
+                                        <li class="aktiv" data-target="#carouselExampleIndicators" data-slide-to="1"><a href="#">Энергозатратность</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"><a href="#">Декоративность</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"><a href="#">Здоровье</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"><a href="#">Инвестиция</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <img src="assets/img/safe-power.jpg" alt="" class="w-100">
+                                    <a class="carousel-control-prev"  data-target="#carouselExampleIndicators" data-slide-to="0">
+                                        <img src="assets/img/left.png" class="prew">
+                                    </a>
+                                    <a class="carousel-control-next"  data-target="#carouselExampleIndicators" data-slide-to="2">
+                                        <img src="assets/img/right.png" class="next" >
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-12 b2">
+                                    <h3>Бережет ваши силы</h3>
+                                    <p>До 3 раз мощнее переносного пылесоса. Расходуйте в 2 раза меньше времени и сил на уборку. Встроенные аксессуары (сделать активную ссылку на блок аксессуары) убирают за считанные секунды: вам не нужно доставать тяжелый пылесос или веник. Встроенный пылесос всегда под рукой – в кухонном шкафчике или на стенке. Очистка контейнера для пыли всего 1 раз в 3 – 12 месяцев.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ДЕКОРАТИВНОСТЬ -->
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="nav col-xs-9">
+                                    <ul class="navig">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" ><a href="#">Шумоизоляция</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"><a href="#">Энергозатратность</a></li>
+                                        <li class="aktiv" data-target="#carouselExampleIndicators" data-slide-to="2"><a href="#">Декоративность</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"><a href="#">Здоровье</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"><a href="#">Инвестиция</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <img src="assets/img/saveinter.jpg" alt="" class="w-100">
+                                    <a class="carousel-control-prev"  data-target="#carouselExampleIndicators" data-slide-to="1">
+                                        <img src="assets/img/left.png" class="prew">
+                                    </a>
+                                    <a class="carousel-control-next"  data-target="#carouselExampleIndicators" data-slide-to="3">
+                                        <img src="assets/img/right.png" class="next" >
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-12 b2">
+                                    <h3>Сохраняет элементы интерьера</h3>
+                                    <p>До 3 раз мощнее переносного пылесоса. Расходуйте в 2 раза меньше времени и сил на уборку. Встроенные аксессуары (сделать активную ссылку на блок аксессуары) убирают за считанные секунды: вам не нужно доставать тяжелый пылесос или веник. Встроенный пылесос всегда под рукой – в кухонном шкафчике или на стенке. Очистка контейнера для пыли всего 1 раз в 3 – 12 месяцев.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ЗДОРОВЬЕ -->
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="nav col-xs-9">
+                                    <ul class="navig">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" ><a href="#">Шумоизоляция</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"><a href="#">Энергозатратность</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"><a href="#">Декоративность</a></li>
+                                        <li class="aktiv" data-target="#carouselExampleIndicators" data-slide-to="3"><a href="#">Здоровье</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"><a href="#">Инвестиция</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <img src="assets/img/lovefamily.jpg" alt="" class="w-100">
+                                    <a class="carousel-control-prev"  data-target="#carouselExampleIndicators" data-slide-to="2">
+                                        <img src="assets/img/left.png" class="prew">
+                                    </a>
+                                    <a class="carousel-control-next"  data-target="#carouselExampleIndicators" data-slide-to="4">
+                                        <img src="assets/img/right.png" class="next" >
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-12 b2">
+                                    <h3>Заботится о здоровье семьи</h3>
+                                    <p>Только центральный пылесос побеждает аллергию на домашнюю пыль благодаря устройству системы: весь отработанный воздух удаляется за пределы здания, ваша семья дышит только чистым воздухом без вредной пыли и аллергенов. Другими словами, центральный пылесос – это насос, который откачивает 100% пыли и аллергенов из Вашего жилья.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ИНВЕСТИЦИЯ -->
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="nav col-xs-9">
+                                    <ul class="navig">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" ><a href="#">Шумоизоляция</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"><a href="#">Энергозатратность</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"><a href="#">Декоративность</a></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"><a href="#">Здоровье</a></li>
+                                        <li  class="aktiv" data-target="#carouselExampleIndicators" data-slide-to="4"><a href="#">Инвестиция</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <img src="assets/img/home-gold.jpg" alt="" class="w-100">
+                                    <a class="carousel-control-prev"  data-target="#carouselExampleIndicators" data-slide-to="3">
+                                        <img src="assets/img/left.png" class="prew">
+                                    </a>
+                                    <a class="carousel-control-next"  data-target="#carouselExampleIndicators" data-slide-to="0">
+                                        <img src="assets/img/right.png" class="next" >
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-12 b2">
+                                    <h3>Дом с ним ценится дороже – инвестиция в будущее.</h3>
+                                    <p>Трубопровод центрального пылесоса встраивается навсегда, как водопровод или отопление. Агрегат системы имеет срок службы до 20 лет. Центральный пылесос – выгодная инвестиция, повысит ценность вашей недвижимости в случае ее продажи.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<section class="cleaner-link" id="cleaner-link">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <h2>Как работает <br>встроенный пылесос?</h2>
+            <!-- Button trigger modal -->
+            <a href="#" class="text-uppercase" data-toggle="modal" data-target="#Know">узнать</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="Know" tabindex="-1" role="dialog" aria-labelledby="KnowLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="KnowLabel">КАК УСТРОЕНА СИСТЕМА</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-center align-items-start">
+                                    <div class="col-md-6">
+                                        <iframe width="100%" style="min-height: 350px;" src="https://www.youtube.com/embed/Avgy4MlvaJw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div>
+                                            Система закладывается во время строительства или капитального ремонта
+                                            Центральный (встроенный) пылесос монтируют в техническом помещении (подвал, гараж, санузел, балкон). От него прокладывают трубопровод, который прячут в стяжку пола, стены или под потолок
+                                            По дому расставляют пневморозетки и аксессуары для быстрой уборки. Они подключены к единой системе трубопровода и одному стационарному пылесосу. После отделочных работ на стенах заметны только пневматические розетки.
+                                            Посмотрите видео 2 минуты, как удобно пользоваться встроенным пылесосом и как эта система устроена.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="imger" src="assets/img/vacuum-cleaner.png" alt="">
+        </div>
+    </div>
+</section>
+<section class="steps" id="steps">
+    <div class="container">
+        <h2 class="text-center">Этапы работы</h2>
+        <div class="row justify-content-center">
+            <div class="step-slider">
+                <div class="slider-item">
+                    <div class="caption">
+                        <h3><span class="mr-3">1</span> Разработка проекта</h3>
+                        <img src="assets/img/manage-project.png" alt="">
+                        <div class="step-text">
+                            <p>
+                                Оформляете заявку, к которой прикрепляете план квартиры/дома.
+                            </p>
+                            <p>
+                                Наши специалисты бесплатно подготовят проект и ценовое предложение
+                            </p>
+                            <p>
+                                Вы получаете несколько вариантов оборудования.
+                                Помогаем разобраться со всеми техническим моментами.
+                            </p>
+                            <p>
+                                Согласовываем с вами детали проекта.
+                                Варианты оплаты на выбор:
+                            </p>
+                            <p>
+                                1.       Сразу за весь комплекс работ и оборудование - дарим ценную скидку.
+                            </p>
+                            <p>
+                                2.       Оплата за каждый этап работы (трубопровод, монтаж оборудования), уже без скидки.
+                            </p>
+                            <p>
+                                Сроки: 1 день.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="caption">
+                        <h3><span class="mr-3">2</span> Монтаж трубопровода</h3>
+                        <img src="assets/img/montage.png" alt="">
+                        <div class="step-text">
+                            <p>
+                                Этап строительства или ремонта:
+                            </p>
+                            <p>
+                                1.       Мы закладываем трубопровод центрального пылесоса.
+                            </p>
+                            <p>
+                                2.       При желании монтаж трубопровода можно осуществить самим – самые детальные видео-инструкции и рекомендации будут у вас, это очень легко!
+                            </p>
+                            <p>
+                                3.       Затем мы проверим каждый элемент системы на прочность и герметичность.
+                            </p>
+                            <p>
+                                Сроки: 1-3 дня.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="caption">
+                        <h3><span class="mr-3">3</span> Установка оборудования</h3>
+                        <img src="assets/img/install.png" alt="">
+                        <div class="step-text">
+                            <p>
+                                По завершении ремонта, мы устанавливаем центральный пылесос и все необходимые аксессуары.
+                            </p>
+                            <p>
+                                Предоставляем гарантию на 3 года.
+                            </p>
+                            <p>
+                                Сроки: 1 день.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cleaner-cost">
+    <div class="container">
+        <h2 class="text-center">
+            Хотите узнать стоимость <br>
+            встроенного пылесоса для вашего дома?
+        </h2>
+        <p class="text-center">
+            Заполните заявку и мы выполним бесплатный расчет и разработаем проект
+        </p>
+        <div class="row justify-content-center no-gutters">
+            <div class="col-lg-4 col-md-6">
+                <img src="assets/img/Femme_Retraflex.png" alt="">
+            </div>
+            <div class="col-lg-5 col-md-6 d-flex justify-content-center justify-content-md-start">
+                <form action="mail.php" method="post" id="man-proj" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="user_name" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" name="user_phone" placeholder="Телефон" id="phone-more">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="user_email" aria-describedby="emailHelp" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <p class="text-center">
+                            Если у вас есть план жилья с размерами в электронном виде(любой формат), пришлите его нам в архиве
+                        </p>
+                    </div>
+                    <div class="form-group d-flex justify-content-sm-between justify-content-center flex-column flex-sm-row choose-file">
+                        <input type="file" id="manage-file" name="man-file[]" class="d-none" multiple="multiple">
+                        <button type="button" class="text-uppercase" id="call-manage-file">выбрать файл</button>
+                        <span class="text-uppercase text-center"><small class="file-name">файл не выбран</small></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="user_message" placeholder="Ваш коментарий"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input id="man-proj-submit" type="submit" value="разработать проект" class="text-uppercase">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="accesories">
+    <div class="container-fluid">
+        <h2 class="special-we">
+            Уборочные аксессуары в каждый <br>
+            уголок Вашего дома
+        </h2>
+
+
+        <div class="row special-we">
+            <ul class="nav nav-tabs navig" id="acessoriesTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="kitchen-tab" data-toggle="tab" href="#kitchen" role="tab" aria-controls="kitchen" aria-selected="false">Кухня</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active show" id="hole-tab" data-toggle="tab" href="#hole" role="tab" aria-controls="hole" aria-selected="true">Прихожая</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="room-tab" data-toggle="tab" href="#room" role="tab" aria-controls="room" aria-selected="false">Гостинная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="toilet-tab" data-toggle="tab" href="#toilet" role="tab" aria-controls="toilet" aria-selected="false">Спальнaя</a>
+                </li>
+            </ul>
+        </div>
+
+    <div class="tab-content" id="acessoriesTabContent">
+        <div class="tab-pane fade show active" id="kitchen" role="tabpanel" aria-labelledby="kitchen-tab">
+            <div class="row justify-content-between align-items-center no-gutters">
+                <div class="col-lg-6 caption">
+                    <div class="accessories-container">
+                        <h3>Касета Vroom</h3>
+                        <div class="row align-items-center no-gutters">
+                            <div class=" esaq">
+                                <img src="assets/img/1.png" alt="">
+                            </div>
+                            <div class="text">
+
+                                <p>
+                                    Шланг растягивается до 6 метров и позволяет моментально убирать крошки со стола, шкафчиков, мусор с пола. Vroom встраивается в кухонную мебель, в шкафы в прихожей или гараж. Он всегда под рукой! Кассета Vroom - любимый аксессуар наших клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 caption">
+
+                    <div class="accessories-container">
+                        <h3>Пневмосовок</h3>
+                        <div class="row align-items-center no-gutters">
+
+                            <div class=" esaq">
+                                <img src="assets/img/2.png" alt="">
+                            </div>
+                            <div class="text">
+
+                                <p>
+                                    Шланг растягивается до 6 метров и позволяет моментально убирать крошки со стола, шкафчиков, мусор с пола. Vroom встраивается в кухонную мебель, в шкафы в прихожей или гараж. Он всегда под рукой! Кассета Vroom - любимый аксессуар наших клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="hole" role="tabpanel" aria-labelledby="hole-tab">
+            <div class="row justify-content-between align-items-center no-gutters">
+                <div class="col-lg-6 caption">
+                    <div class="accessories-container">
+                        <h3>Касета Vroom</h3>
+                        <div class="row align-items-center no-gutters">
+                            <div class="esaq">
+                                <img src="assets/img/3.jpg" alt="">
+                            </div>
+                            <div class="text">
+
+                                <p>
+                                    Шланг растягивается до 6 метров и позволяет моментально убирать крошки со стола, шкафчиков, мусор с пола. Vroom встраивается в кухонную мебель, в шкафы в прихожей или гараж. Он всегда под рукой! Кассета Vroom - любимый аксессуар наших клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 caption">
+                    <div class="accessories-container">
+                        <h3>Воллифлекс</h3>
+                        <div class="row align-items-center no-gutters">
+                            <div class="esaq">
+                                <img src="assets/img/4.JPG" alt="">
+                            </div>
+                            <div class="text">
+
+                                <p>
+                                    Шланг растягивается до 6 метров и позволяет моментально убирать крошки со стола, шкафчиков, мусор с пола. Vroom встраивается в кухонную мебель, в шкафы в прихожей или гараж. Он всегда под рукой! Кассета Vroom - любимый аксессуар наших клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="room" role="tabpanel" aria-labelledby="room-tab">
+            <div class="row justify-content-between align-items-center no-gutters">
+                <div class="col-lg-6 caption">
+                    <div class="accessories-container">
+                        <h3>Пневморозетка</h3>
+                        <div class="row align-items-center no-gutters">
+                            <div class="esaq">
+                                <img src="assets/img/4.JPG" alt="">
+                            </div>
+
+                            <div class="text">
+
+                                <p>
+                                    Шланг растягивается до 6 метров и позволяет моментально убирать крошки со стола, шкафчиков, мусор с пола. Vroom встраивается в кухонную мебель, в шкафы в прихожей или гараж. Он всегда под рукой! Кассета Vroom - любимый аксессуар наших клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 caption">
+                    <div class="accessories-container">
+                        <h3>Воллифлекс</h3>
+                        <div class="row align-items-center no-gutters">
+
+                            <div class="esaq">
+                                <img src="assets/img/5.jpg" alt="">
+                            </div>
+                            <div class="text">
+
+                                <p>
+                                    Шланг растягивается до 6 метров и позволяет моментально убирать крошки со стола, шкафчиков, мусор с пола. Vroom встраивается в кухонную мебель, в шкафы в прихожей или гараж. Он всегда под рукой! Кассета Vroom - любимый аксессуар наших клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="toilet" role="tabpanel" aria-labelledby="toilet-tab">
+            <div class="row justify-content-between align-items-center no-gutters">
+                <div class="col-lg-6 caption">
+                    <div class="accessories-container">
+                        <h3>Пневморозетка</h3>
+                        <div class="row align-items-center no-gutters">
+                            <div class="esaq">
+                                <img src="assets/img/3.jpg" alt="">
+                            </div>
+                            <div class="text">
+
+                                <p>
+                                    Шланг растягивается до 6 метров и позволяет моментально убирать крошки со стола, шкафчиков, мусор с пола. Vroom встраивается в кухонную мебель, в шкафы в прихожей или гараж. Он всегда под рукой! Кассета Vroom - любимый аксессуар наших клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 caption d-flex justify-content-end">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="honest" id="honest">
+    <div class="container">
+        <h2 class="text-center">
+            Почему более 3000 домов доверили нам <br>
+            установку встроенного пылесоса?
+        </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li><img src="assets/img/check.png" alt=""><p>Компания «Имидж» - 18 лет опыта продаж и монтажа</p></li>
+                    <li><img src="assets/img/check.png" alt=""><p>Официальный поставщик в Украине 5 торговых марок оборудования от эконом до премиум сегмента:
+                        <a href="https://cyclovac.ua/ru/rumodelnyj-riad/2013-03-19-13-19-40" target="_blank">Cyclovac</a>, <a href="http://drainvac.com.ua/modelnyj-riad" target="_blank">Drainvac</a> (Канада),
+                        <a href="http://vacuflo.kiev.ua/modelnyj-riad" target="_blank">Vacuflo</a> (США), <a href="https://vac-shop.com.ua/ru/pylesos-kvartirnyj-disan/vstroennyy-pylesos-matrix.html" target="_blank">Disan</a> (Италия), <a
+                                href="https://vac-shop.com.ua/ru/globovac.html" target="_blank">Globovac</a> (Великобритания) Вся продукция сертифицирована согласно
+                        законодательства Украины</p>
+                    </li>
+                    <li><img src="assets/img/check.png" alt=""><p>За время работы было реализовано более 3000 объектов</p></li>
+                    <li><img src="assets/img/check.png" alt=""><p>Сотрудничаем с 125 компаниями в 54 городах Украины</p></li>
+                    <li><img src="assets/img/check.png" alt=""><p>Обеспечиваем сервис систем пылеудаления по всей территории Украины</p></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/honest.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sales" id="sales">
+    <div class="container">
+        <h2 class="text-center">
+            Акционные предложения
+        </h2>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <ul class="nav nav-tabs" id="salesTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="flat-tab" href="#flat" role="tab" aria-controls="flat" aria-selected="true"> в дом</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="house-tab"  href="#house" role="tab" aria-controls="house" aria-selected="false">в квартиру</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <div class="tab-content" id="salesTabContent">
+                    <div class="tab-pane fade show active" id="flat" role="tabpanel" aria-labelledby="flat-tab">
+                        <div class="row ">
+                            <div class="col-md-5 ">
+                                <div class="sales-caption">
+                                    <img src="assets/img/hm.jpg" alt="">
+                                    <div class="">
+                                        <p><strong>Акция для дома до 250 м.кв.</strong></p>
+                                        <p>
+                                            Комплект оборудования 1350 дол. + <a href="http://vac-shop.com.ua/ru/aksessuary-dlya-uborki/product/view/5/29.html">WallyFlex в подарок</a>
+                                            - пылесос  <a href="http://vac-shop.com.ua/ru/pylesosy-decovac/tsentralnyj-pylesos-decovac-dv600-do-300-m-kv.html">DecoVac DV60</a><br>
+                                            - набор для уборки <a href="http://vac-shop.com.ua/ru/uborochnye-komplekty/product/view/4/88.html">Standart</a>,<br>
+                                            - монтажный комплект труб, пневморозетки 4 шт.
+                                        </p>
+                                        <button type="button" class="text-uppercase" data-toggle="modal" data-target="#flat-1">заказать</button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="flat-1" tabindex="-1" role="dialog" aria-labelledby="flat-1Label" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <form action="" class="form-jer">
+
+                                                        <div class="inpt1"> <input type="text" placeholder="Имя"> </div>
+                                                        <div class="inpt2">
+                                                            <input type="tel" placeholder="Телефон" name="user_phone" id="phone-modal">
+                                                        </div>
+                                                        <div class="inpt3">     <input type="email"  name="user_email" aria-describedby="emailHelp" placeholder="E-mail"></div>
+                                                        <div>    <button class="mrg">Отправить</button></div>
+
+
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">Закрыть</span>
+                                                        </button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="sales-caption">
+                                    <img src="assets/img/ap.jpg" alt="">
+                                    <div class="">
+                                        <p><strong>Акция для квартиры до 120 м.кв.</strong></p>
+                                        <p>
+                                            Комплект оборудования 895 дол. + <a href="http://vac-shop.com.ua/ru/aksessuary-dlya-uborki/product/view/5/32.html">Пневмосовок в подарок</a>
+                                            - пылесос <a href="http://vac-shop.com.ua/ru/pylesos-kvartirnyj-disan/vstroennyy-pylesos-matrix.html">Disan MATRIX PT</a><br>
+                                            - набор для уборки <a href="http://vac-shop.com.ua/ru/uborochnye-komplekty/product/view/4/176.html">Standart</a>, <br>
+                                            - монтажный комплект труб, пневморозетки 3 шт.
+                                        </p>
+                                        <button type="button" class="text-uppercase" data-toggle="modal" data-target="#flat-2">заказать</button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="flat-2" tabindex="-1" role="dialog" aria-labelledby="flat-2Label" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <form action="" class="form-jer">
+
+                                                        <div class="inpt1"> <input type="text" placeholder="Имя"> </div>
+                                                        <div class="inpt2"><input type="tel" placeholder="Телефон" name="user_phone" id="phone-modalk"></div>
+                                                        <div class="inpt3">  <input type="email"  name="user_email" aria-describedby="emailHelp" placeholder="E-mail"></div>
+                                                        <div>    <button class="mrg">Отправить</button></div>
+
+
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span class="closes" aria-hidden="true">Закрыть</span>
+                                                        </button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="house" role="tabpanel" aria-labelledby="house-tab">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="sales-caption">
+                                    <img src="assets/img/hm.jpg" alt="">
+                                    <div class="">
+                                        <p><strong>Акция для дома до 250 м.кв.</strong></p>
+                                        <p>
+                                            Комплект оборудования 1350 дол. + <a href="http://vac-shop.com.ua/ru/aksessuary-dlya-uborki/product/view/5/29.html">WallyFlex</a> в подарок
+                                            - пылесос <a href="http://vac-shop.com.ua/ru/pylesosy-decovac/tsentralnyj-pylesos-decovac-dv600-do-300-m-kv.html">DecoVac DV60</a>
+                                            - <a href="http://vac-shop.com.ua/ru/uborochnye-komplekty/product/view/4/88.html">набор для уборки</a>
+                                            - монтажный комплект труб, пневморозетки 4 шт.
+                                        </p>
+                                        <button type="button" class="text-uppercase" data-toggle="modal" data-target="#home-1">заказать</button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="home-1" tabindex="-1" role="dialog" aria-labelledby="home-1Label" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <form action="" class="form-jer">
+
+                                                        <div class="inpt1"> <input type="text" placeholder="Имя"> </div>
+                                                        <div class="inpt2"> <input type="tel" placeholder="Телефон" name="user_phone" id=""></div>
+                                                        <div class="inpt3">     <input type="email" placeholder="email"></div>
+                                                        <div>    <button class="mrg">Отправить</button></div>
+
+
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">Закрыть</span>
+                                                        </button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="sales-caption">
+                                    <img src="assets/img/ap.jpg" alt="">
+                                    <div class="">
+                                        <p><strong>Акция для дома до 250 м.кв.</strong></p>
+                                        <p>
+                                            Комплект оборудования 1350 дол. + <a href="http://vac-shop.com.ua/ru/aksessuary-dlya-uborki/product/view/5/29.html">WallyFlex</a> в подарок
+                                            - пылесос <a href="http://vac-shop.com.ua/ru/pylesosy-decovac/tsentralnyj-pylesos-decovac-dv600-do-300-m-kv.html">DecoVac DV60</a>
+                                            - <a href="http://vac-shop.com.ua/ru/uborochnye-komplekty/product/view/4/88.html">набор для уборки</a>
+                                            - монтажный комплект труб, пневморозетки 4 шт.
+                                        </p>
+                                        <button type="button" class="text-uppercase" data-toggle="modal" data-target="#home-2">заказать</button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="home-2" tabindex="-1" role="dialog" aria-labelledby="home-2Label" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <form action="" class="form-jer">
+
+                                                        <div class="inpt1"> <input type="text" placeholder="Имя"> </div>
+                                                        <div class="inpt2"> <input type="tel" placeholder="Телефон" name="user_phone" id="">></div>
+                                                        <div class="inpt3">     <input type="email" placeholder="email"></div>
+                                                        <div>    <button class="mrg">Отправить</button></div>
+
+
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">Закрыть</span>
+                                                        </button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="our-clients" id="our-clients">
+    <div class="container">
+        <h2 class="text-center">Отзывы наших клиентов</h2>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="review-slider">
+                    <div class="slider-item">
+                        <div class="review-caption d-flex flex-column flex-md-row justify-content-center align-items-center">
+                            <iframe width="100%" height="350px" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmmiroslava777%2Fposts%2F468362410333737&width=500" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="review-caption d-flex flex-column flex-md-row justify-content-center align-items-center">
+                            <iframe width="100%" height="485px" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1128953090495082%26id%3D100001412052692%26substory_index%3D0&width=500" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="review-caption d-flex flex-column flex-md-row justify-content-center align-items-center">
+                            <iframe width="100%" height="350px" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvodateplo%2Fposts%2F1141535999245928%3A0&width=500" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="review-caption d-flex flex-column flex-md-row justify-content-center align-items-center">
+                            <iframe width="100%" height="350px" src="" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="contacts" id="contacts">
+    <div class="container">
+        <h2 class="text-center">
+            Контакты
+        </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="logo">
+                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+                            <img src="assets/img/logo-min.png" alt="logo">
+                            <div class="text-uppercase">центральные пылесосы</div>
+                        </div>
+                </div>
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="d-flex justify-content-start align-items-center contact-info-item">
+                                <div class="images-icon"><img src="assets/img/kyivstar.png" alt=""></div>
+                                <div class="">
+                                    <p>+ 38 (067) 444 58 01</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="d-flex justify-content-start align-items-start contact-info-item">
+                                <i class="fas fa-map-marker-alt loc"></i>
+                                <p> г. Киев, ул. Машиностроительная (Г.Гонгадзе), 35-А/ 03067</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="d-flex justify-content-start align-items-center contact-info-item">
+                                <div class="images-icon"><img src="assets/img/vodaphone.png" alt=""></div>
+                                <div class="">
+                                    <p>+ 38 (050) 330 42 50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <table>
+                                <tr>
+                                    <td><i class="fas fa-envelope"></i></td>
+                                    <td>vac.ukraine@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fab fa-facebook-f"></i></td>
+                                    <td>facebook.com/vac.com.ua</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="bingc-action-open-passive-form">
+                    Перезвонить мне
+                </button>
+            </div>
+            <div class="col-md-6">
+                <div class="google-map-marker">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5229.89941972625!2d30.415051863752716!3d50.4502794826165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc3fe622e4a3%3A0xe3f33a968a3679b8!2z0YPQuy4g0JzQsNGI0LjQvdC-0YHRgtGA0L7QuNGC0LXQu9GM0L3QsNGPLCAzNdCQLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1534774310367" width="100%" height="333" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="scrollTop">
+    <i class="fas fa-angle-up"></i>
+</div>
+<!--<script src="assets/libs/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--<script src="assets/libs/bootstrap.min.css"></script>-->
+<script src="assets/libs/slick/slick.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="assets/libs/inputmask/inputmask.js"></script>
+<script src="assets/libs/inputmask/inputmask.extensions.js"></script>
+<script src="assets/libs/inputmask/inputmask.numeric.extensions.js"></script>
+<script src="assets/libs/inputmask/inputmask.date.extensions.js"></script>
+<script src="assets/libs/inputmask/inputmask.phone.extensions.js"></script>
+<script src="assets/libs/inputmask/jquery.inputmask.js"></script>
+<script src="assets/libs/inputmask/phone-codes/phone.js"></script>
+<script src="assets/libs/inputmask/phone-codes/phone-be.js"></script>
+<script src="assets/libs/inputmask/phone-codes/phone-ru.js"></script>
+<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+    (function(d, w, s) {
+      var widgetHash = 'ufr9dr2rdhfp71tleef2', gcw = d.createElement(s); gcw.type = 'text/javascript'; gcw.async = true;
+      gcw.src = '//widgets.binotel.com/getcall/widgets/'+ widgetHash +'.js';
+      var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(gcw, sn);
+    })(document, window, 'script');
+</script>
+
+</body>
+</html>
